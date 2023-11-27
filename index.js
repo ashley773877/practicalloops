@@ -69,7 +69,7 @@ function isprime(num) {
     return num > 1;
 }
 
-function nextprime(n) {
+function findnextprime(n) {
     while (true) {
         n++;
         if (isprime(n)) {
