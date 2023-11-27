@@ -41,6 +41,11 @@ if (csv[i] === ",") {
 }
 
 // part 1 
-const PI = 3.1415;
+for (let i = 1; i <= 100; i++) {
+    if(i % 3 === 0 && i % 5 === 0) {
+        console.log("fizz buzz");
+    
+}
 
 
+}
