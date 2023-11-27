@@ -40,7 +40,7 @@ if (csv[i] === ",") {
 } */
 
 // part 1 
-for (let i = 1; i <= 100; i++) {
+/*for (let i = 1; i <= 100; i++) {
     if(i % 3 === 0 && i % 5 === 0) { // check to see if # are divisible by both 3 and 5
         console.log("fizz buzz");
     
@@ -56,8 +56,28 @@ else {
     console.log(i); // if the number isnt divisble by 3 and 5 then just log the number that is 
 }
 
-}
+} */
 
 
 // part 2
+function isprime(num) {
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i == 0) {
+            return false;
+        }
+    }
+    return num > 1;
+}
+
+function nextprime(n) {
+    while (true) {
+        n++;
+        if (isprime(n)) {
+            console.log(n);
+            break;
+        }
+    }
+}
+
+
 
